@@ -4,6 +4,36 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* webpage padding */
+.padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*?--------------------------------------------------------------?*\
+......................... MOBILE VERSION .........................
+/*?--------------------------------------------------------------?*/
+
 body {
   position: relative;
   display: grid;
@@ -12,9 +42,56 @@ body {
   place-content: center;
 }
 
+/*!===========  NAVBAR STYLING START  ============!*/
+/*!============  NAVBAR STYLING END  =============!*/
+
 .box {
   display: grid;
-  padding: 0.5em;
   width: min-content;
-  background-color: aquamarine;
+  background-color: #f0f0f0;
+  padding: 0.5em 0.8em;
+  margin: 0.5em 0;
+  font-family: "Exo";
+  font-size: 1.5em;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  background-color: #808080;
+  color: #fff;
+}
+
+.box2 {
+  display: grid;
+  width: min-content;
+  background-color: #f0f0f0;
+  padding: 0.5em 1.2em;
+  margin: 0.5em 0;
+  font-family: "Exo";
+  font-size: 1.5em;
+
+  transition: all 0.3s ease;
+}
+
+.box2:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+  border: 1px solid rgb(244, 165, 27);
+
+  animation: btn-animation 1s;
+}
+
+@keyframes btn-animation {
+  from {
+    padding: 0.5em 0.8em;
+    border: 1px solid #b83;
+    background-color: #f0f0f0;
+  }
+  to {
+    padding: 0.5em 1.2em;
+    border: 2px solid rgb(244, 165, 27);
+    background-color: #fff;
+  }
 }
