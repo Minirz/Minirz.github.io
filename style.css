@@ -41,6 +41,7 @@ a {
   width: 100%;
   height: 100vh;
   place-content: center;
+  place-items: center;
 }
 
 .box {
@@ -74,7 +75,8 @@ a {
 
 .box2:hover {
   background-color: inherit;
-  color: #000;
-  border: 3px solid rgb(51, 127, 177);
+  color: #fff;
+  outline: 3px solid rgb(51, 127, 177);
   padding: 0.5em 1.6em;
+  border-radius: 5px;
 }
