@@ -12,6 +12,7 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #fff;
+  background-color: rgb(17, 66, 98);
   overflow-x: hidden;
 }
 
@@ -45,50 +46,35 @@ a {
 .box {
   display: grid;
   width: min-content;
-  background-color: #f0f0f0;
-  padding: 0.5em 0.8em;
+  background-color: #252525;
+  padding: 0.5em 1.2em;
   margin: 0.5em 0;
   font-family: "Exo";
-  font-size: 1.5em;
+  font-size: 2em;
   border-radius: 50px;
   transition: all 0.3s ease;
 }
 
 .box:hover {
   transform: scale(1.05);
-  background-color: #808080;
+  background-color: rgb(51, 127, 177);
   color: #fff;
 }
 
 .box2 {
   display: grid;
   width: min-content;
-  background-color: #f0f0f0;
+  background-color: #252525;
   padding: 0.5em 1.2em;
   margin: 0.5em 0;
   font-family: "Exo";
-  font-size: 1.5em;
-
+  font-size: 2em;
   transition: all 0.3s ease;
 }
 
 .box2:hover {
-  transform: scale(1.05);
-  background-color: #fff;
-  border: 1px solid rgb(244, 165, 27);
-
-  animation: btn-animation 1s;
-}
-
-@keyframes btn-animation {
-  from {
-    padding: 0.5em 0.8em;
-    border: 1px solid #b83;
-    background-color: #f0f0f0;
-  }
-  to {
-    padding: 0.5em 1.2em;
-    border: 2px solid rgb(244, 165, 27);
-    background-color: #fff;
-  }
+  background-color: inherit;
+  color: #000;
+  border: 3px solid rgb(51, 127, 177);
+  padding: 0.5em 1.6em;
 }
