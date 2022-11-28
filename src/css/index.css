@@ -946,16 +946,16 @@ a {
   .expertise .expertise-container {
     display: flex;
   }
-  .expertise .expertise-container .exp-fade {
+  .expertise .expertise-container .expertise-top.exp-fade {
     transform: translateY(100%);
     opacity: 0;
     transition: transform 0.4s cubic-bezier(0.47, 1.64, 0.41, 0.8);
   }
-  .expertise .expertise-container .exp-fade.scrolled {
+  .expertise .expertise-container .expertise-top.exp-fade.scrolled {
     transform: translateY(0);
     opacity: 1;
   }
-  .expertise .expertise-container .expertise-text {
+  .expertise .expertise-container .expertise-top .expertise-text {
     max-width: 440px;
   }
   .expertise .expertise-container .exp-cards.exp-fade {
@@ -1078,6 +1078,9 @@ a {
   .design .design-container .slider-wrapper .slider .slide-track .slide {
     box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.35);
   }
+  .design .design-container .slider-wrapper .slider .slide-track .slide .slide-item {
+    transition: transform 0.2s;
+  }
   .design .design-container .slider-wrapper .slider .slide-track2 {
     width: 4800px;
     column-gap: 20px;
@@ -1092,6 +1095,9 @@ a {
   }
   .design .design-container .slider-wrapper .slider .slide-track2 .slide {
     box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.35);
+  }
+  .design .design-container .slider-wrapper .slider .slide-track2 .slide .slide-item {
+    transition: transform 0.2s;
   }
   .design .design-container .slider-wrapper .slider:nth-child(2) {
     animation: 1s ease-out 0.4s 1 sliderSlideLeft forwards;

@@ -1087,14 +1087,14 @@ a {
     .expertise-container {
       display: flex;
 
-      .expertertise-top {
-        .exp-fade {
+      .expertise-top {
+        &.exp-fade {
           transform: translateY(100%);
           opacity: 0;
           transition: transform 0.4s cubic-bezier(0.47, 1.64, 0.41, 0.8);
         }
 
-        .exp-fade.scrolled {
+        &.exp-fade.scrolled {
           transform: translateY(0);
           opacity: 1;
         }
@@ -1105,13 +1105,13 @@ a {
       }
 
       .exp-cards {
-        .exp-fade {
+        &.exp-fade {
           transform: translateY(100%);
           opacity: 0;
           transition: transform 0.8s cubic-bezier(0.47, 1.64, 0.41, 0.8);
         }
 
-        .exp-fade.scrolledDelay {
+        &.exp-fade.scrolledDelay {
           transform: translateY(0);
           opacity: 1;
         }
@@ -1245,6 +1245,10 @@ a {
 
             .slide {
               box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.35);
+
+              .slide-item {
+                transition: transform 0.2s;
+              }
             }
           }
 
@@ -1265,6 +1269,10 @@ a {
 
             .slide {
               box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.35);
+
+              .slide-item {
+                transition: transform 0.2s;
+              }
             }
           }
         }
