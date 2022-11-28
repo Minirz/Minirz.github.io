@@ -1109,7 +1109,7 @@ a {
           transition: transform 0.8s cubic-bezier(0.47, 1.64, 0.41, 0.8);
         }
 
-        &.exp-fade.scrolledDelay {
+        &.exp-fade.scrolled {
           transform: translateY(0);
           opacity: 1;
         }

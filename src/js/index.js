@@ -83,7 +83,7 @@ const expFadeDelayed = document.getElementsByClassName("exp-fade");
 
 window.addEventListener("scroll", () => {
   for (let i = 0; i < expFade.length; i++) {
-    if (window.innerHeight - expFade[i].getBoundingClientRect().top > 80) {
+    if (window.innerHeight - expFade[i].getBoundingClientRect().top > 0) {
       expFadeDelayed[i].classList.add("scrolledDelay");
     } else {
       expFadeDelayed[i].classList.remove("scrolledDelay");
