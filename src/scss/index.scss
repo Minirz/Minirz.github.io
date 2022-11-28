@@ -1087,29 +1087,31 @@ a {
     .expertise-container {
       display: flex;
 
-      .exp-fade {
-        transform: translateY(100%);
-        opacity: 0;
-        transition: transform 0.4s cubic-bezier(0.47, 1.64, 0.41, 0.8);
-      }
+      .expertertise-top {
+        .exp-fade {
+          transform: translateY(100%);
+          opacity: 0;
+          transition: transform 0.4s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+        }
 
-      .exp-fade.scrolled {
-        transform: translateY(0);
-        opacity: 1;
-      }
+        .exp-fade.scrolled {
+          transform: translateY(0);
+          opacity: 1;
+        }
 
-      .expertise-text {
-        max-width: 440px;
+        .expertise-text {
+          max-width: 440px;
+        }
       }
 
       .exp-cards {
-        &.exp-fade {
+        .exp-fade {
           transform: translateY(100%);
           opacity: 0;
           transition: transform 0.8s cubic-bezier(0.47, 1.64, 0.41, 0.8);
         }
 
-        &.exp-fade.scrolledDelay {
+        .exp-fade.scrolledDelay {
           transform: translateY(0);
           opacity: 1;
         }
