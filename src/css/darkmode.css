@@ -1,0 +1,124 @@
+/**========== LIGHTMODE VARIABLES ==========**/
+/**========== DARKMODE VARIABLES ===========**/
+/**======= WIDTH & HEIGHT VARIABLES =======**/
+/**============ FONT VARIABLES ============**/
+/**====== PADDING & MARGIN VARIABLES ======**/
+.padding {
+  padding: 0 20px;
+}
+
+body.dark {
+  background: url(../images/tg-pattern-wn-black-bigger.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body.dark .navbar .navbar-container .nav-menu-wrapper {
+  background: linear-gradient(-45deg, #073068 0%, #175edc 100%), url(../images/tg-pattern-wn-black-bigger.jpg);
+  background-blend-mode: difference;
+}
+body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-link {
+  color: #dcdeea;
+  -webkit-text-stroke: 0.2px #151515;
+}
+body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .label {
+  box-shadow: inset 0 0 10px -2px rgba(255, 255, 255, 0.8);
+}
+body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .label .fa-adjust {
+  color: #dcdeea;
+  transform: scale(1.6);
+  transform: rotate(180deg) scale(1.6);
+}
+body.dark .navbar .bar {
+  background-color: #dcdeea;
+}
+body.dark .header .header-container .header-greeding {
+  color: #dcdeea;
+}
+body.dark .header .header-container .header-title {
+  color: #dcdeea;
+}
+body.dark .header .header-container .ht-bottom {
+  color: transparent;
+  -webkit-text-stroke: 2px #dcdeea;
+}
+body.dark .header .header-container .header-profile-image {
+  mix-blend-mode: normal;
+}
+body.dark .header .header-filter {
+  background: linear-gradient(-45deg, #073068 0%, #175edc 100%);
+  mix-blend-mode: difference;
+}
+body.dark .develop .develop-container .dv-title {
+  color: #dcdeea;
+}
+body.dark .develop .develop-container .dv-project {
+  box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.35);
+}
+body.dark .expertise .expertise-container .expertise-title {
+  color: #dcdeea;
+}
+body.dark .expertise .expertise-container .expertise-text {
+  color: #dcdeea;
+}
+body.dark .expertise .expertise-container .exp-card .exp-card-border::before {
+  background: linear-gradient(45deg, #175edc 0%, #175edc 100%);
+}
+body.dark .expertise .expertise-filter {
+  background: linear-gradient(-45deg, #073068 0%, #175edc 100%);
+  mix-blend-mode: difference;
+}
+body.dark .design .design-container .design-title {
+  color: #dcdeea;
+}
+body.dark .design .design-container .design-title .stroked {
+  -webkit-text-stroke: 2px #dcdeea;
+}
+body.dark .footer .footer-container .column-box .contact-info .con-info-top .con-info-title {
+  color: #dcdeea;
+}
+body.dark .footer .footer-container .column-box .contact-info .con-info-text {
+  color: #dcdeea;
+}
+body.dark .footer .footer-container .column-box .footer-menu .footer-item .footer-link {
+  color: #dcdeea;
+}
+body.dark .footer .footer-container .column-box .social-medias-title {
+  color: #dcdeea;
+}
+body.dark .footer .footer-container .copyright-text {
+  color: #dcdeea;
+}
+body.dark .footer .footer-filter {
+  background: linear-gradient(-45deg, #073068 0%, #175edc 100%);
+  mix-blend-mode: difference;
+}
+
+@media (min-width: 1200px) {
+  body.dark #topBtn:hover {
+    background-color: #dcdeea;
+    color: #151515;
+  }
+  body.dark .navbar .navbar-container .nav-menu-wrapper {
+    background: transparent;
+  }
+  body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-link {
+    background-image: linear-gradient(45deg, #02a5e0 50%, #dcdeea 50%);
+  }
+  body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-cta-btn:hover {
+    background-color: #dcdeea;
+    color: #151515;
+  }
+  body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode:hover .fa-adjust {
+    color: #02a5e0;
+  }
+  body.dark .footer .footer-container .footer-top .footer-link {
+    background-image: linear-gradient(45deg, #02a5e0 50%, #dcdeea 50%);
+  }
+  body.dark .footer .footer-container .footer-top .contact-info .con-info-text:hover {
+    color: #02a5e0;
+  }
+  body.dark .footer .footer-container .footer-top .medias-menu .media-item .media-link .footer-social-icon:hover {
+    color: #dcdeea;
+  }
+}/*# sourceMappingURL=darkmode.css.map */

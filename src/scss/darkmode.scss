@@ -1,0 +1,211 @@
+@import "./variables";
+
+body.dark {
+  background: $background-dark;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .navbar {
+    .navbar-container {
+      .nav-menu-wrapper {
+        background: $filter-dark, $background-dark;
+        background-blend-mode: difference;
+
+        .nav-item {
+          .nav-link {
+            color: $clr-text-dark;
+            -webkit-text-stroke: 0.2px $clr-dark;
+          }
+
+          .label {
+            box-shadow: inset 0 0 10px -2px rgba(255, 255, 255, 0.8);
+
+            .fa-adjust {
+              color: $clr-light;
+              transform: scale(1.6);
+              transform: rotate(180deg) scale(1.6);
+            }
+          }
+        }
+      }
+    }
+
+    .bar {
+      background-color: $clr-light;
+    }
+  }
+
+  .header {
+    .header-container {
+      .header-greeding {
+        color: $clr-title-dark;
+      }
+
+      .header-title {
+        color: $clr-title-dark;
+      }
+
+      .ht-bottom {
+        color: transparent;
+        -webkit-text-stroke: 2px $clr-title-dark;
+      }
+
+      .header-profile-image {
+        mix-blend-mode: normal;
+      }
+    }
+
+    .header-filter {
+      background: $filter-dark;
+      mix-blend-mode: difference;
+    }
+  }
+
+  .develop {
+    .develop-container {
+      .dv-title {
+        color: $clr-title-dark;
+      }
+
+      .dv-project {
+        box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.35);
+      }
+    }
+  }
+
+  .expertise {
+    .expertise-container {
+      .expertise-title {
+        color: $clr-title-dark;
+      }
+
+      .expertise-text {
+        color: $clr-text-dark;
+      }
+
+      .exp-card {
+        .exp-card-border::before {
+          background: linear-gradient(45deg, $clr-secondary 0%, $clr-secondary 100%);
+        }
+      }
+    }
+    .expertise-filter {
+      background: $filter-dark;
+      mix-blend-mode: difference;
+    }
+  }
+
+  .design {
+    .design-container {
+      .design-title {
+        color: $clr-title-dark;
+
+        .stroked {
+          -webkit-text-stroke: 2px $clr-title-dark;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .footer-container {
+      .column-box {
+        .contact-info {
+          .con-info-top {
+            .con-info-title {
+              color: $clr-title-dark;
+            }
+          }
+
+          .con-info-text {
+            color: $clr-text-dark;
+          }
+        }
+
+        .footer-menu {
+          .footer-item {
+            .footer-link {
+              color: $clr-text-dark;
+            }
+          }
+        }
+
+        .social-medias-title {
+          color: $clr-title-dark;
+        }
+      }
+
+      .copyright-text {
+        color: $clr-text-dark;
+      }
+    }
+
+    .footer-filter {
+      background: $filter-dark;
+      mix-blend-mode: difference;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  body.dark {
+    #topBtn:hover {
+      background-color: $clr-light;
+      color: $clr-dark;
+    }
+
+    .navbar {
+      .navbar-container {
+        .nav-menu-wrapper {
+          background: transparent;
+
+          .nav-item {
+            .nav-link {
+              background-image: linear-gradient(45deg, $clr-accent 50%, $clr-light 50%);
+            }
+
+            .nav-cta-btn {
+              &:hover {
+                background-color: $clr-light;
+                color: $clr-dark;
+              }
+            }
+
+            .darkmode:hover {
+              .fa-adjust {
+                color: $clr-accent;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer {
+      .footer-container {
+        .footer-top {
+          .footer-link {
+            background-image: linear-gradient(45deg, $clr-accent 50%, $clr-light 50%);
+          }
+
+          .contact-info {
+            .con-info-text:hover {
+              color: $clr-accent;
+            }
+          }
+
+          .medias-menu {
+            .media-item {
+              .media-link {
+                .footer-social-icon:hover {
+                  color: $clr-light;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
