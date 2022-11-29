@@ -1079,7 +1079,7 @@ a {
     box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.35);
   }
   .design .design-container .slider-wrapper .slider .slide-track .slide .slide-item {
-    transition: transform 0.2s;
+    transition: transform 0.3s ease;
   }
   .design .design-container .slider-wrapper .slider .slide-track2 {
     width: 4800px;
@@ -1097,7 +1097,7 @@ a {
     box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.35);
   }
   .design .design-container .slider-wrapper .slider .slide-track2 .slide .slide-item {
-    transition: transform 0.2s;
+    transition: transform 0.3s ease;
   }
   .design .design-container .slider-wrapper .slider:nth-child(2) {
     animation: 1s ease-out 0.4s 1 sliderSlideLeft forwards;
