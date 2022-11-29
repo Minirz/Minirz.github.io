@@ -8,13 +8,13 @@
 }
 
 body.dark {
-  background: url(../images/tg-pattern-wn-black-bigger.jpg);
+  background: url(../images/tg-pattern-wn-black-bigger.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 body.dark .navbar .navbar-container .nav-menu-wrapper {
-  background: linear-gradient(-45deg, #073068 0%, #175edc 100%), url(../images/tg-pattern-wn-black-bigger.jpg);
+  background: linear-gradient(-45deg, #073068 0%, #175edc 100%), url(../images/tg-pattern-wn-black-bigger.webp);
   background-blend-mode: difference;
 }
 body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-link {
