@@ -59,7 +59,9 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <button id="topBtn" onclick="topFunction()"><i class="fas fa-angle-up"></i></button>
+    <button id="topBtn" onclick="topFunction()" aria-label="Scroll to top">
+      <i class="fas fa-angle-up"></i>
+    </button>
 
     <!-- *=========== HEADER SECTION START ===========* -->
     <header class="header" id="header">
@@ -99,6 +101,7 @@
                     onclick="toggleMode()"
                     class="checkbox"
                     id="chk"
+                    aria-label="Change theme"
                   />
                   <label for="chk" class="label">
                     <i class="fas fa-adjust"></i>
