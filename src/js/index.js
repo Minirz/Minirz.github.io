@@ -1,4 +1,4 @@
-//* ============ BURGERMENU SCRIPT START ============ *\
+//* ============ BURGERMENU SCRIPT START ============ *\\
 var prevScrollpos = window.pageYOffset;
 
 // navigationbar scroll function
@@ -36,9 +36,10 @@ function closeMenu() {
 window.addEventListener("scroll", function () {
   var nav = document.querySelector("nav");
 
-  nav.classList.toggle("sticky", window.scrollY > 0);
+  nav.classList.toggle("scroll", window.scrollY > 0);
 });
-//! ============= BURGERMENU SCRIPT END ============= !\
+
+//! ============= BURGERMENU SCRIPT END ============ !\\
 
 //* =========== SCROLL-TO-TOP SCRIPT START =========== *\
 
