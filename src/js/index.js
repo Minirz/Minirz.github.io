@@ -40,7 +40,7 @@ window.addEventListener("scroll", function () {
 });
 //! ============= BURGERMENU SCRIPT END ============= !\
 
-//* ============ BURGERMENU SCRIPT START ============ *\
+//* =========== SCROLL-TO-TOP SCRIPT START =========== *\
 
 // Get the button:
 let topbutton = document.getElementById("topBtn");
@@ -64,31 +64,4 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-//! ============= BURGERMENU SCRIPT END ============= !\
-
-//* ============= FADE-IN SCRIPT START ============== *\
-const expFade = document.getElementsByClassName("exp-fade");
-
-window.addEventListener("scroll", () => {
-  for (let i = 0; i < expFade.length; i++) {
-    if (window.innerHeight - expFade[i].getBoundingClientRect().top > 0) {
-      expFade[i].classList.add("scrolled");
-    } else {
-      expFade[i].classList.remove("scrolled");
-    }
-  }
-});
-
-const expFadeDelayed = document.getElementsByClassName("exp-fade");
-
-window.addEventListener("scroll", () => {
-  for (let i = 0; i < expFade.length; i++) {
-    if (window.innerHeight - expFade[i].getBoundingClientRect().top > 0) {
-      expFadeDelayed[i].classList.add("scrolledDelay");
-    } else {
-      expFadeDelayed[i].classList.remove("scrolledDelay");
-    }
-  }
-});
-
-//! ============== FADE-IN SCRIPT END =============== !\
+//! ============ SCROLL-TO-TOP SCRIPT END ============ !\

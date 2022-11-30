@@ -7,6 +7,7 @@
   padding: 0 20px;
 }
 
+/**=========== UTILS VARIABLES ===========**/
 body.dark {
   background: url(../images/tg-pattern-wn-black.jpg);
   background-position: center;
