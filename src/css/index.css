@@ -823,7 +823,7 @@ a {
   }
   .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-link {
     font-size: 2.6rem;
-    background-image: linear-gradient(45deg, #02a5e0 50%, #151515 50%);
+    background-image: linear-gradient(45deg, #02a5e0 50%, #151515 50%, #175edc 100%);
     background-size: 300% 100%;
     background-position: 100%;
     background-clip: text;
@@ -839,9 +839,18 @@ a {
     font-size: 2.2rem;
     padding: 8px 15px;
     transition: 0.3s ease-out;
+    background-image: linear-gradient(45deg, #02a5e0 50%, #151515 50%);
+    background-size: 300% 200%;
+    background-position: 0%;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    transition: all 0.3s linear;
+    /*   &:hover {
+      background-color: $clr-dark;
+    } */
   }
   .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-cta-btn:hover {
-    background-color: #151515;
+    background-position: 100%;
   }
   .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode:hover .fa-adjust {
     color: #02a5e0;
@@ -912,19 +921,19 @@ a {
   }
   .develop .develop-container .dv-cta-btn.hidden {
     opacity: 0;
-    transform: scale(0);
+    transform: scale(0) translateY(1000px);
     filter: blur(2px);
-    transition: all 0.8s ease-out;
+    transition: 0.8s ease-out;
   }
   .develop .develop-container .dv-cta-btn.show-once {
     opacity: 1;
     filter: blur(0);
-    transform: scale(1);
-    transition-delay: 1s;
+    transform: scale(1) translateY(0);
   }
   .develop .develop-container .dv-cta-btn:hover {
     padding: 15px 30px;
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.35);
+    transition: 0.3s ease 0s;
   }
   .develop .develop-container .dv-projects-wrapper .dv-project {
     height: 0%;
@@ -1021,7 +1030,7 @@ a {
     opacity: 0;
     filter: blur(2px);
     transform: translateX(-100%);
-    transition: all 0.7s ease-out;
+    transition: all 1s ease-out;
   }
   .design .design-container .design-top .design-title.show-once {
     opacity: 1;
