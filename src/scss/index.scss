@@ -1041,7 +1041,7 @@ a {
         &.hidden {
           opacity: 0;
           filter: blur(2px);
-          transform: translateY(250%);
+          transform: translateY(350%);
           transition: all 0.6s ease-out;
         }
 
@@ -1049,7 +1049,7 @@ a {
           opacity: 1;
           filter: blur(0);
           transform: translateY(0);
-          transition-delay: 0.6s;
+          transition-delay: 0.5s;
         }
       }
 
@@ -1057,11 +1057,11 @@ a {
         &.hidden {
           opacity: 0;
           filter: blur(2px);
-          transform: translateY(150%);
-          transition: all 0.7s ease-out;
+          transform: translateY(50%);
+          transition: all 1s ease-out;
         }
 
-        &.show-once {
+        &.show-repeat {
           opacity: 1;
           filter: blur(0);
           transform: translateY(0);
@@ -1071,12 +1071,12 @@ a {
       .dv-cta-btn {
         &.hidden {
           opacity: 0;
-          transform: scale(0) translateY(1000px);
+          transform: scale(0) translateY(500px);
           filter: blur(2px);
-          transition: 0.8s ease-out;
+          transition: all 0.8s ease-out;
         }
 
-        &.show-once {
+        &.show-repeat {
           opacity: 1;
           filter: blur(0);
           transform: scale(1) translateY(0);
@@ -1199,7 +1199,7 @@ a {
           &.hidden {
             opacity: 0;
             filter: blur(2px);
-            transform: translateY(250%);
+            transform: translateY(350%);
             transition: all 0.6s ease-out;
           }
 
@@ -1215,11 +1215,11 @@ a {
           &.hidden {
             opacity: 0;
             filter: blur(2px);
-            transform: translateX(-100%);
+            transform: translateX(-20%);
             transition: all 1s ease-out;
           }
 
-          &.show-once {
+          &.show-repeat {
             opacity: 1;
             filter: blur(0);
             transform: translateX(0);

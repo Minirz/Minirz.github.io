@@ -21,13 +21,12 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  height: -webkit-fill-available;
 }
 
 body {
   position: relative;
   width: 100%;
-  height: -webkit-fill-available;
+  height: 100%;
   overflow-x: hidden;
   font-family: "Barlow", Arial, Helvetica, sans-serif;
   background: url(../images/tg-pattern-wn-white.jpg);
@@ -905,33 +904,33 @@ a {
   .develop .develop-container .dv-skill-title.hidden {
     opacity: 0;
     filter: blur(2px);
-    transform: translateY(250%);
+    transform: translateY(350%);
     transition: all 0.6s ease-out;
   }
   .develop .develop-container .dv-skill-title.show-repeat {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
-    transition-delay: 0.6s;
+    transition-delay: 0.5s;
   }
   .develop .develop-container .dv-title.hidden {
     opacity: 0;
     filter: blur(2px);
-    transform: translateY(150%);
-    transition: all 0.7s ease-out;
+    transform: translateY(50%);
+    transition: all 1s ease-out;
   }
-  .develop .develop-container .dv-title.show-once {
+  .develop .develop-container .dv-title.show-repeat {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
   }
   .develop .develop-container .dv-cta-btn.hidden {
     opacity: 0;
-    transform: scale(0) translateY(1000px);
+    transform: scale(0) translateY(500px);
     filter: blur(2px);
-    transition: 0.8s ease-out;
+    transition: all 0.8s ease-out;
   }
-  .develop .develop-container .dv-cta-btn.show-once {
+  .develop .develop-container .dv-cta-btn.show-repeat {
     opacity: 1;
     filter: blur(0);
     transform: scale(1) translateY(0);
@@ -1023,7 +1022,7 @@ a {
   .design .design-container .design-top .design-skill-title.hidden {
     opacity: 0;
     filter: blur(2px);
-    transform: translateY(250%);
+    transform: translateY(350%);
     transition: all 0.6s ease-out;
   }
   .design .design-container .design-top .design-skill-title.show-repeat {
@@ -1035,10 +1034,10 @@ a {
   .design .design-container .design-top .design-title.hidden {
     opacity: 0;
     filter: blur(2px);
-    transform: translateX(-100%);
+    transform: translateX(-20%);
     transition: all 1s ease-out;
   }
-  .design .design-container .design-top .design-title.show-once {
+  .design .design-container .design-top .design-title.show-repeat {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
