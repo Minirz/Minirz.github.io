@@ -15,13 +15,12 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  height: -webkit-fill-available;
 }
 
 body {
   position: relative;
   width: 100%;
-  height: -webkit-fill-available;
+  height: 100%;
   overflow-x: hidden;
   font-family: "Barlow", Arial, Helvetica, sans-serif;
   background: $background;
