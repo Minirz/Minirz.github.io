@@ -15,7 +15,7 @@ body.dark {
         .nav-item {
           .nav-link {
             color: $clr-text-dark;
-            -webkit-text-stroke: 0.2px $clr-dark;
+            // -webkit-text-stroke: 0.2px $clr-dark;
           }
 
           .label {
@@ -33,6 +33,17 @@ body.dark {
 
     .bar {
       background-color: $clr-light;
+    }
+  }
+
+  .navbar.scroll {
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    box-shadow: 0 4px 7px -4px rgba(0, 0, 0, 0.2);
+
+    .nav-blur {
+      backdrop-filter: blur(2px);
     }
   }
 
@@ -191,6 +202,16 @@ body.dark {
       }
     }
 
+    .header {
+      .header-container {
+        .header-top {
+          .ht-bottom {
+            -webkit-text-stroke: 3px $clr-title-dark;
+          }
+        }
+      }
+    }
+
     .footer {
       .footer-container {
         .footer-top {
@@ -326,7 +347,7 @@ body.dark {
         }
 
         100% {
-          transform: translateY(-600px) rotate(720deg);
+          transform: translateY(-400px) rotate(720deg);
           opacity: 0;
           border-radius: 50%;
         }

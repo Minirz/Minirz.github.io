@@ -68,7 +68,6 @@ a {
   justify-content: center;
   min-width: $min-width;
   width: 100%;
-  background-color: rgba(220, 222, 234, 0);
   top: 30px;
   left: 0;
   right: 0;
@@ -89,6 +88,7 @@ a {
 
 .navbar.scroll {
   height: 80px;
+  background-color: rgba(255, 255, 255, 0.6);
   top: 0;
   box-shadow: 0 4px 7px -4px rgba(0, 0, 0, 0.2);
 
@@ -123,7 +123,6 @@ a {
   right: -100%;
   background: $filter, $background;
   background-blend-mode: soft-light;
-  opacity: 0;
   transition: all 0.3s linear;
 
   .social-menu {
@@ -160,7 +159,7 @@ a {
     .nav-link {
       font-size: 4rem;
       color: $clr-dark;
-      -webkit-text-stroke: 0.2px $clr-light;
+      // -webkit-text-stroke: 0.2px $clr-light;
     }
 
     .nav-cta-btn {
@@ -951,7 +950,6 @@ a {
 
             &:hover {
               background-position: 0;
-              -webkit-text-stroke: 0;
             }
           }
 
@@ -1005,6 +1003,10 @@ a {
               font-size: clamp(3.2rem, 9vw, 14rem);
             }
           }
+        }
+
+        .ht-bottom {
+          -webkit-text-stroke: 3px $clr-title;
         }
       }
 
@@ -1339,11 +1341,10 @@ a {
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          transition: all 0.3s linear;
+          transition: all 0.3s ease-out;
 
           &:hover {
             background-position: 0;
-            -webkit-text-stroke: 0;
           }
         }
 
@@ -1490,7 +1491,7 @@ a {
       }
 
       100% {
-        transform: translateY(-600px) rotate(720deg);
+        transform: translateY(-400px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
       }
