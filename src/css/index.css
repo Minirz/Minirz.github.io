@@ -573,7 +573,6 @@ a {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  /*  IMPORTANT CODE BELOW */
 }
 .design .design-container .slider-wrapper .slider .slide {
   display: flex;
