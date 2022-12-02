@@ -15,6 +15,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -35,7 +36,7 @@ ol {
 }
 
 a {
-  color: #000;
+  color: $clr-dark;
   text-decoration: none;
 }
 
@@ -47,7 +48,7 @@ a {
   position: fixed;
   bottom: -50px;
   right: 20px;
-  padding: 13px 15px;
+  padding: 12px 14.6px;
   background-color: $clr-accent;
   color: white;
   font-size: 20px;
@@ -93,7 +94,7 @@ a {
   box-shadow: 0 4px 7px -4px rgba(0, 0, 0, 0.2);
 
   .nav-blur {
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
   }
 }
 
@@ -136,8 +137,8 @@ a {
       margin: 0 1rem;
 
       .social-icon {
-        color: $clr-accent;
         font-size: 40px;
+        color: $clr-accent;
       }
     }
   }
@@ -159,7 +160,6 @@ a {
     .nav-link {
       font-size: 4rem;
       color: $clr-dark;
-      // -webkit-text-stroke: 0.2px $clr-light;
     }
 
     .nav-cta-btn {
@@ -934,7 +934,7 @@ a {
 
           .nav-link {
             font-size: 2.6rem;
-            background-image: linear-gradient(45deg, $clr-accent 50%, $clr-light 50%);
+            background-image: linear-gradient(45deg, $clr-accent 50%, $clr-dark 50%);
             background-size: 300% 100%;
             background-position: 100%;
             background-clip: text;
