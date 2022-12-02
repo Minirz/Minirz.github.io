@@ -40,11 +40,6 @@ body.dark {
     background-color: rgba(0, 0, 0, 0.4);
     top: 0;
     box-shadow: 0 4px 7px -4px rgba(0, 0, 0, 0.2);
-
-    .nav-blur {
-      backdrop-filter: blur(3px);
-      -webkit-backdrop-filter: blur(3px);
-    }
   }
 
   .header {

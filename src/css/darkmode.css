@@ -38,10 +38,6 @@ body.dark .navbar.scroll {
   top: 0;
   box-shadow: 0 4px 7px -4px rgba(0, 0, 0, 0.2);
 }
-body.dark .navbar.scroll .nav-blur {
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-}
 body.dark .header .header-container .header-greeding {
   color: #dcdeea;
 }
