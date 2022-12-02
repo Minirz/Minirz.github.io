@@ -832,7 +832,7 @@ a {
   }
   .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-link {
     font-size: 2.6rem;
-    background-image: linear-gradient(45deg, #02a5e0 50%, #073068 50%, #073068 52%, #02a5e0 100%);
+    background-image: linear-gradient(45deg, #02a5e0 50%, #dcdeea 50%);
     background-size: 300% 100%;
     background-position: 100%;
     background-clip: text;
