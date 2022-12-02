@@ -31,7 +31,6 @@ window.addEventListener("scroll", () => {
 // Repeats the animation
 const observerRepeat = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show-repeat");
     } else {
@@ -46,7 +45,6 @@ hiddenElementsRepeat.forEach((el) => observerRepeat.observe(el));
 // Only runs the animation once
 const observerOnce = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show-once");
     }
