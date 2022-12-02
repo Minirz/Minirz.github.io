@@ -185,6 +185,7 @@ a {
 .nav-menu-wrapper .nav-item .label .fa-adjust {
   color: #151515;
   transform: rotate(0deg) scale(1.6);
+  -webkit-transform: rotate(0deg) scale(1.6);
   transition: transform 0.5s linear, color 0.2s ease;
 }
 
