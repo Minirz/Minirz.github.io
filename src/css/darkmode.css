@@ -34,12 +34,12 @@ body.dark .navbar .bar {
 }
 body.dark .navbar.scroll {
   height: 80px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   top: 0;
   box-shadow: 0 4px 7px -4px rgba(0, 0, 0, 0.2);
 }
 body.dark .navbar.scroll .nav-blur {
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
 }
 body.dark .header .header-container .header-greeding {
   color: #dcdeea;
@@ -112,7 +112,7 @@ body.dark .footer .footer-filter {
     background: transparent;
   }
   body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-link {
-    background-image: linear-gradient(45deg, #02a5e0 50%, #175edc 50%, #02a5e0 90%, #02a5e0 100%);
+    background-image: linear-gradient(45deg, #02a5e0 50%, #dcdeea 50%);
   }
   body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-cta-btn {
     background-image: linear-gradient(45deg, #02a5e0 50%, #dcdeea 50%);

@@ -21,6 +21,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -41,7 +42,7 @@ ol {
 }
 
 a {
-  color: #000;
+  color: #151515;
   text-decoration: none;
 }
 
@@ -52,7 +53,7 @@ a {
   position: fixed;
   bottom: -50px;
   right: 20px;
-  padding: 13px 15px;
+  padding: 12px 14.6px;
   background-color: #02a5e0;
   color: white;
   font-size: 20px;
@@ -96,7 +97,7 @@ a {
   box-shadow: 0 4px 7px -4px rgba(0, 0, 0, 0.2);
 }
 .navbar.scroll .nav-blur {
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
 }
 
 .navbar-container {
@@ -137,8 +138,8 @@ a {
   margin: 0 1rem;
 }
 .nav-menu-wrapper .social-menu .nav-item .social-icon {
-  color: #02a5e0;
   font-size: 40px;
+  color: #02a5e0;
 }
 .nav-menu-wrapper .nav-item {
   margin: 6rem 0;
@@ -832,7 +833,7 @@ a {
   }
   .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-link {
     font-size: 2.6rem;
-    background-image: linear-gradient(45deg, #02a5e0 50%, #dcdeea 50%);
+    background-image: linear-gradient(45deg, #02a5e0 50%, #151515 50%);
     background-size: 300% 100%;
     background-position: 100%;
     background-clip: text;
