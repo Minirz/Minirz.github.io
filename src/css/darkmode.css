@@ -9,13 +9,13 @@
 
 /**=========== UTILS VARIABLES ===========**/
 body.dark {
-  background: url(../images/tg-pattern-wn-black.jpg);
+  background: url(../images/background-dark.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 body.dark .navbar .navbar-container .nav-menu-wrapper {
-  background: linear-gradient(-45deg, #073068 0%, #175edc 100%), url(../images/tg-pattern-wn-black.jpg);
+  background: linear-gradient(-45deg, #1d4275 0%, #1d467e 100%), url(../images/background-dark.jpg);
   background-blend-mode: difference;
 }
 body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-link {
@@ -52,7 +52,7 @@ body.dark .header .header-container .header-profile-image {
   mix-blend-mode: normal;
 }
 body.dark .header .header-filter {
-  background: linear-gradient(-45deg, #073068 0%, #175edc 100%);
+  background: linear-gradient(-45deg, #1d4275 0%, #1d467e 100%);
   mix-blend-mode: difference;
 }
 body.dark .develop .develop-container .dv-title {
@@ -71,7 +71,7 @@ body.dark .expertise .expertise-container .exp-card .exp-card-border::before {
   background: linear-gradient(45deg, #175edc 0%, #175edc 100%);
 }
 body.dark .expertise .expertise-filter {
-  background: linear-gradient(-45deg, #073068 0%, #175edc 100%);
+  background: linear-gradient(-45deg, #1d4275 0%, #1d467e 100%);
   mix-blend-mode: difference;
 }
 body.dark .design .design-container .design-title {
@@ -96,14 +96,14 @@ body.dark .footer .footer-container .copyright-text {
   color: #dcdeea;
 }
 body.dark .footer .footer-filter {
-  background: linear-gradient(-45deg, #073068 0%, #175edc 100%);
+  background: linear-gradient(-45deg, #1d4275 0%, #1d467e 100%);
   mix-blend-mode: difference;
 }
 
 @media (min-width: 1200px) {
   body.dark #topBtn:hover {
     background-color: #dcdeea;
-    color: #151515;
+    color: #181b1c;
   }
   body.dark .navbar .navbar-container .nav-menu-wrapper {
     background: transparent;
@@ -117,7 +117,7 @@ body.dark .footer .footer-filter {
   body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-cta-btn:hover {
     background-position: 100%;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
-    color: #151515;
+    color: #181b1c;
   }
   body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode:hover .fa-adjust {
     color: #02a5e0;

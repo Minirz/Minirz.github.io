@@ -1,6 +1,6 @@
 /**========== LIGHTMODE VARIABLES ==========**/
 
-$clr-dark: #151515;
+$clr-dark: #181b1c;
 $clr-light: #dcdeea;
 $clr-primary: #073068;
 $clr-secondary: #175edc;
@@ -10,7 +10,7 @@ $clr-text: $clr-light;
 
 $filter: linear-gradient(-45deg, #073068 0%, #175edc 100%);
 
-$background: url(../images/tg-pattern-wn-white.jpg);
+$background: url(../images/background-white.jpg);
 
 /**========== DARKMODE VARIABLES ===========**/
 
@@ -20,9 +20,9 @@ $clr-accent-dark: $clr-accent;
 $clr-title-dark: $clr-light;
 $clr-text-dark: $clr-light;
 
-$filter-dark: $filter;
+$filter-dark: linear-gradient(-45deg, #1d4275 0%, #1d467e 100%);
 
-$background-dark: url(../images/tg-pattern-wn-black.jpg);
+$background-dark: url(../images/background-dark.jpg);
 
 /**======= WIDTH & HEIGHT VARIABLES =======**/
 
