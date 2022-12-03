@@ -1,16 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script defer>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MGKMDVM");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      defer
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HCK7NZV9L0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HCK7NZV9L0");
+    </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minirz.github.io</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Author: Victor Clausen, Category: Portfolio" />
+    <title>Victor Clausen</title>
+
+    <!-- Links -->
+    <link rel="icon" type="image/x-icon" href="/src/images/Logo.png" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="/src/css/darkmode.css" />
+
+    <!-- Scripts -->
+    <script defer src="/src/js/index.js"></script>
+    <script defer src="/src/js/darkmode.js"></script>
+    <script defer src="/src/js/animations.js"></script>
+
+    <script
+      defer
+      rel="preconnect"
+      src="https://kit.fontawesome.com/0518abe1b3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <div class="boxes">
-      <h1 class="box">Minirz.github.io</h1>
-      <h1 class="box2">Minirz.github.io</h1>
-    </div>
+  <body id="body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MGKMDVM"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <button id="topBtn" onclick="topFunction()" aria-label="Scroll to top">
+      <i class="fas fa-angle-up"></i>
+    </button>
+
+    <!-- *=========== HEADER SECTION START ===========* -->
+    <header class="header" id="header">
+      <!-- *=========== NAVBAR SECTION START ===========* -->
+      <nav class="navbar" id="navbar">
+        <div class="nav-blur"></div>
+        <div class="navbar-container padding">
+          <a href="#header">
+            <img src="/src/images/Logo.png" alt="navbar logo" class="nav-logo" />
+          </a>
+
+          <div class="nav-menu-wrapper">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#develop" class="nav-link">Develop</a>
+              </li>
+              <li class="nav-item">
+                <a href="#expertise" class="nav-link">Expertise</a>
+              </li>
+              <li class="nav-item">
+                <a href="#design" class="nav-link">Design</a>
+              </li>
+              <li class="nav-item">
+                <a href="#footer" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item hire-btn">
+                <a href="#footer" class="nav-cta-btn">Hire me</a>
+              </li>
+              <li class="nav-item theme-toggle">
+                <div class="darkmode">
+                  <input
+                    type="checkbox"
+                    onclick="toggleMode()"
+                    class="checkbox"
+                    id="chk"
+                    aria-label="Change theme"
+                  />
+                  <label for="chk" class="label">
+                    <i class="fas fa-adjust"></i>
+                  </label>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="social-menu">
+              <li class="nav-item">
+                <a
+                  href="https://www.instagram.com/minirz119/"
+                  class="nav-link"
+                  aria-label="My instagram"
+                >
+                  <i class="fa fa-instagram social-icon"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://twitter.com/rotirz"
+                  class="nav-link"
+                  aria-label="My twitter"
+                >
+                  <i class="fa fa-twitter social-icon"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://www.linkedin.com/in/victor-clausen-154a37250/"
+                  class="nav-link"
+                  aria-label="My linkedin"
+                >
+                  <i class="fa-brands fa-linkedin social-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+      <!-- !============ NAVBAR SECTION END ============! -->
+
+      <div class="header-container">
+        <div class="header-top">
+          <p class="header-greeding">👋, my name is Victor and I am a</p>
+          <h1 class="header-title ht-top">Web Developer</h1>
+          <h1 class="header-title ht-bottom">&amp; Graphic Designer</h1>
+        </div>
+
+        <div class="header-btm">
+          <img
+            src="/src/images/profile-img-small.png"
+            alt="header image"
+            class="header-profile-image padding"
+          />
+
+          <div class="header-btns">
+            <a href="#develop" class="header-cta-btn">See my creations</a>
+            <a href="#design" class="header-cta-btn">Discover my designs</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-filter"></div>
+    </header>
+    <!-- !============ HEADER SECTION END ============! -->
+
+    <!-- *========== DEVELOP SECTION START ===========* -->
+    <section class="develop" id="develop">
+      <div class="develop-container padding">
+        <p class="dv-skill-title hidden">Web Developer, Graphic Designer</p>
+        <h2 class="dv-title hidden">
+          Impactful branding and high-end designed websites for creatives
+        </h2>
+        <a href="#footer" class="dv-cta-btn hidden">Let's start a project</a>
+
+        <div class="dv-projects-wrapper">
+          <div class="dv-project">
+            <img
+              src="/src/images/mockups/photosite-project-mockup.jpg"
+              alt="website project mockup"
+              loading="lazy"
+              class="project-mockup"
+            />
+          </div>
+          <div class="dv-project">
+            <img
+              src="/src/images/mockups/praxis-project-mockup.jpg"
+              alt="website project mockup"
+              loading="lazy"
+              class="project-mockup mockup-position"
+            />
+          </div>
+          <div class="dv-project">
+            <img
+              src="/src/images/mockups/gamers-reality-project-mockup.jpg"
+              alt="website project mockup"
+              loading="lazy"
+              class="project-mockup"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !=========== DEVELOP SECTION END ============! -->
+
+    <!-- *========== EXPERTISE SECTION START =========* -->
+    <section class="expertise" id="expertise">
+      <div class="expertise-container padding">
+        <div class="expertise-top padding exp-fade">
+          <h2 class="expertise-title hidden">My Expertise</h2>
+          <p class="expertise-text">
+            I can make a functional and fully responsive website that meet you and your
+            customers needs. You also get a beautiful and attractive design
+          </p>
+        </div>
+
+        <div class="exp-cards padding exp-fade">
+          <div class="exp-card">
+            <h3 class="card-title">Frontend</h3>
+            <h3 class="card-title title-stroked">Development</h3>
+            <hr class="card-splitter" />
+            <p class="card-text">
+              Experienced in frontend development. I specialize in HTML5, CSS3, JS and
+              React
+            </p>
+            <img
+              src="/src/images/short-portfolio-code-img.png"
+              alt="card image"
+              class="card-bg-img code-text"
+            />
+            <div class="exp-card-border"></div>
+          </div>
+
+          <div class="exp-card">
+            <h3 class="card-title">Graphic</h3>
+            <h3 class="card-title title-stroked">Design</h3>
+
+            <hr class="card-splitter" />
+            <p class="card-text">
+              4 years of doing graphic design. I have a lot of experience with Adobe
+              Photoshop and Illustrator
+            </p>
+            <img
+              src="/src/images/graphics-tools.png"
+              alt="card image"
+              class="card-bg-img graphic-tools"
+            />
+            <div class="exp-card-border second"></div>
+          </div>
+        </div>
+      </div>
+      <div class="expertise-filter"></div>
+    </section>
+
+    <!-- !=========== EXPERTISE SECTION END ==========! -->
+
+    <!-- *=========== DESIGN SECTION START ===========* -->
+    <section class="design" id="design">
+      <div class="design-container">
+        <div class="design-top">
+          <p class="design-skill-title hidden padding">Web Design, Logo Design</p>
+          <h2 class="design-title hidden padding">
+            High-quality designs with your brand
+            <span class="stroked">identity</span> in the
+            <span class="stroked">core</span> of my approach
+          </h2>
+        </div>
+
+        <div class="slider-wrapper">
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/minirz-ttv-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/pepz-ttv-new-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/summer_vibe-ttv-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/snobzen-ttv-new-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <!-- same slides doubled (duplicate) -->
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/minirz-ttv-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/pepz-ttv-new-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/summer_vibe-ttv-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/snobzen-ttv-new-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="slider">
+            <div class="slide-track2">
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/daria-ttv-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/portal-ttv-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/snobzen-ttv-old-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/pepz-ttv-old-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <!-- same slides doubled (duplicate)-->
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/daria-ttv-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/portal-ttv-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/snobzen-ttv-old-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/src/images/design-projects/pepz-ttv-old-banner.jpg"
+                  alt="slider image"
+                  class="slide-item"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !============ DESIGN SECTION END ============! -->
+
+    <!-- *=========== FOOTER SECTION START ===========* -->
+
+    <footer class="footer" id="footer">
+      <div class="footer-container padding">
+        <div class="footer-top">
+          <div class="column-box left-top">
+            <img src="/src/images/Logo.png" alt="footer logo" class="footer-logo" />
+
+            <div class="contact-info">
+              <div class="con-info-top">
+                <p class="con-info-title">email</p>
+                <hr class="con-info-splitter" />
+              </div>
+              <a
+                href="mailto:viggo119@outlook.dk"
+                rel="nofollow"
+                class="con-info-text"
+                aria-label="my email address"
+                >viggo119@outlook.dk</a
+              >
+            </div>
+            <div class="contact-info">
+              <div class="con-info-top">
+                <p class="con-info-title">number</p>
+                <hr class="con-info-splitter" />
+              </div>
+              <a
+                href="tel:+4553-96-88-01"
+                rel="nofollow"
+                class="con-info-text"
+                aria-label="my phone number"
+                >53-96-88-01</a
+              >
+            </div>
+          </div>
+
+          <div class="column-box middle">
+            <ul class="footer-menu">
+              <li class="footer-item">
+                <a href="#develop" class="footer-link">Develop</a>
+              </li>
+              <li class="footer-item">
+                <a href="#expertise" class="footer-link">Expertise</a>
+              </li>
+              <li class="footer-item">
+                <a href="#design" class="footer-link">Design</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="column-box right-bottom">
+            <p class="social-medias-title">Contact</p>
+            <ul class="medias-menu">
+              <li class="media-item">
+                <a
+                  href="https://www.instagram.com/minirz119/"
+                  class="media-link"
+                  aria-label="My instagram"
+                >
+                  <i class="fa fa-instagram footer-social-icon"></i>
+                </a>
+              </li>
+              <li class="media-item">
+                <a
+                  href="https://twitter.com/rotirz"
+                  class="media-link"
+                  aria-label="My twitter"
+                >
+                  <i class="fa fa-twitter footer-social-icon"></i>
+                </a>
+              </li>
+              <li class="media-item">
+                <a
+                  href="https://www.linkedin.com/in/victor-clausen-154a37250/"
+                  class="media-link"
+                  aria-label="My linkedin"
+                >
+                  <i class="fa-brands fa-linkedin footer-social-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <hr class="footer-splitter" />
+
+          <p class="copyright-text">© 2022 Victor Clausen. All rights reserved</p>
+        </div>
+      </div>
+      <div class="footer-filter">
+        <div class="area">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- !============ FOOTER SECTION END ============! -->
   </body>
 </html>

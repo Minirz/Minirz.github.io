@@ -1,0 +1,56 @@
+/**========== LIGHTMODE VARIABLES ==========**/
+
+$clr-dark: #151515;
+$clr-light: #dcdeea;
+$clr-primary: #073068;
+$clr-secondary: #175edc;
+$clr-accent: #02a5e0;
+$clr-title: $clr-dark;
+$clr-text: $clr-light;
+
+$filter: linear-gradient(-45deg, #073068 0%, #175edc 100%);
+
+$background: url(../images/tg-pattern-wn-white.jpg);
+
+/**========== DARKMODE VARIABLES ===========**/
+
+$clr-primary-dark: $clr-primary;
+$clr-secondary-dark: $clr-secondary;
+$clr-accent-dark: $clr-accent;
+$clr-title-dark: $clr-light;
+$clr-text-dark: $clr-light;
+
+$filter-dark: $filter;
+
+$background-dark: url(../images/tg-pattern-wn-black.jpg);
+
+/**======= WIDTH & HEIGHT VARIABLES =======**/
+
+$max-width: 1440px;
+$min-width: 320px;
+
+/**============ FONT VARIABLES ============**/
+
+$font-weight: (
+  "fs-thin": 100,
+  "fs-extralight": 200,
+  "fs-light": 300,
+  "fs-regular": 400,
+  "fs-medium": 500,
+  "fs-semibold": 600,
+  "fs-bold": 700,
+  "fs-extrabold": 800,
+  "fs-black": 900,
+);
+
+/**====== PADDING & MARGIN VARIABLES ======**/
+
+.padding {
+  padding: 0 20px;
+}
+
+$m-small: 60px;
+$m-medium: 110px;
+$m-large: 220px;
+
+/**=========== UTILS VARIABLES ===========**/

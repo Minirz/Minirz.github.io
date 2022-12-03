@@ -1,2 +1,2 @@
-# Minirz.github.io
-This is my personal github repository
+# Portfolio
+ This is my own personal portfolio
