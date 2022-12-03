@@ -12,10 +12,10 @@ body.dark {
   background: url(../images/background-dark.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
 }
 body.dark .navbar .navbar-container .nav-menu-wrapper {
-  background: linear-gradient(-45deg, #1d4275 0%, #1d467e 100%), url(../images/background-dark.jpg);
+  background: #174484, url(../images/background-dark.jpg);
   background-blend-mode: difference;
 }
 body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-link {
@@ -29,7 +29,7 @@ body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .label .fa-adjus
   transform: rotate(180deg) scale(1.6);
   -webkit-transform: rotate(180deg) scale(1.6);
 }
-body.dark .navbar .bar {
+body.dark .navbar .navbar-container .hamburger .bar {
   background-color: #dcdeea;
 }
 body.dark .navbar.scroll {
@@ -52,7 +52,7 @@ body.dark .header .header-container .header-profile-image {
   mix-blend-mode: normal;
 }
 body.dark .header .header-filter {
-  background: linear-gradient(-45deg, #1d4275 0%, #1d467e 100%);
+  background: #174484;
   mix-blend-mode: difference;
 }
 body.dark .develop .develop-container .dv-title {
@@ -71,7 +71,7 @@ body.dark .expertise .expertise-container .exp-card .exp-card-border::before {
   background: linear-gradient(45deg, #175edc 0%, #175edc 100%);
 }
 body.dark .expertise .expertise-filter {
-  background: linear-gradient(-45deg, #1d4275 0%, #1d467e 100%);
+  background: #174484;
   mix-blend-mode: difference;
 }
 body.dark .design .design-container .design-title {
@@ -96,7 +96,7 @@ body.dark .footer .footer-container .copyright-text {
   color: #dcdeea;
 }
 body.dark .footer .footer-filter {
-  background: linear-gradient(-45deg, #1d4275 0%, #1d467e 100%);
+  background: #174484;
   mix-blend-mode: difference;
 }
 
