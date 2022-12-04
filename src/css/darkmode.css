@@ -26,9 +26,9 @@ body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .label {
 }
 body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .label .fa-adjust {
   color: #dcdeea;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg) translateY(20%);
+  -moz-transform: rotate(180deg) translateY(20%);
+  transform: rotate(180deg) translateY(20%);
 }
 body.dark .navbar .navbar-container .hamburger .bar {
   background-color: #dcdeea;
@@ -122,6 +122,11 @@ body.dark .footer .footer-filter {
     background-position: 100%;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
     color: #181b1c;
+  }
+  body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode .label .fa-adjust {
+    -webkit-transform: rotate(180deg) translateY(0%);
+    -moz-transform: rotate(180deg) translateY(0%);
+    transform: rotate(180deg) translateY(0%);
   }
   body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode:hover .fa-adjust {
     color: #02a5e0;
