@@ -162,7 +162,7 @@ a {
 .nav-menu-wrapper .nav-item .label {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
