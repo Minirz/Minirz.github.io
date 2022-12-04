@@ -920,6 +920,10 @@ a {
   }
   .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode:hover .fa-adjust {
     color: #02a5e0;
+    top: 0%;
+    -webkit-transform: rotate(0deg) translateY(0%);
+    -moz-transform: rotate(0deg) translateY(0%);
+    transform: rotate(0deg) translateY(0%);
   }
   .navbar .navbar-container .nav-menu-wrapper .social-menu {
     display: none;

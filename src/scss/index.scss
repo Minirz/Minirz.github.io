@@ -1052,6 +1052,10 @@ a {
           .darkmode:hover {
             .fa-adjust {
               color: $clr-accent;
+              top: 0%;
+              -webkit-transform: rotate(0deg) translateY(0%);
+              -moz-transform: rotate(0deg) translateY(0%);
+              transform: rotate(0deg) translateY(0%);
             }
           }
         }

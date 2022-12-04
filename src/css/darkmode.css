@@ -125,6 +125,9 @@ body.dark .footer .footer-filter {
   }
   body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode:hover .fa-adjust {
     color: #02a5e0;
+    -webkit-transform: rotate(180deg) translateY(0%);
+    -moz-transform: rotate(180deg) translateY(0%);
+    transform: rotate(180deg) translateY(0%);
   }
   body.dark .header .header-container .header-top .ht-bottom {
     -webkit-text-stroke: 3px #dcdeea;
