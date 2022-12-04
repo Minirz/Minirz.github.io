@@ -4,7 +4,7 @@ body.dark {
   background: $background-dark;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
 
   .navbar {
     .navbar-container {
@@ -158,6 +158,8 @@ body.dark {
 
 @media (min-width: 1200px) {
   body.dark {
+    background-attachment: fixed;
+
     #topBtn:hover {
       background-color: $clr-light;
       color: $clr-dark;

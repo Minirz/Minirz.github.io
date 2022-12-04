@@ -33,7 +33,7 @@ body {
   background: url(../images/background-white.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
 }
 
 ul,
@@ -772,6 +772,9 @@ a {
 ......................... DESKTOP VERSION .........................
 /*?--------------------------------------------------------------?*/
 @media (min-width: 1200px) {
+  body {
+    background-attachment: fixed;
+  }
   #topBtn:hover {
     background-color: #181b1c;
   }
