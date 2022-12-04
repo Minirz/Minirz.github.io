@@ -112,6 +112,7 @@ a {
   display: block;
   width: auto;
   height: 45px;
+  user-select: none;
   z-index: 1;
 }
 
@@ -125,7 +126,7 @@ a {
   max-height: 100vh;
   top: 0;
   right: -100%;
-  background: #174484, url(../images/background-white.jpg);
+  background: linear-gradient(-45deg, #174484 0%, #174484 100%), url(../images/background-white.jpg);
   background-blend-mode: soft-light;
   transition: all 0.3s linear;
 }
@@ -185,6 +186,7 @@ a {
 .hamburger {
   display: block;
   cursor: pointer;
+  user-select: none;
   z-index: 1;
 }
 .hamburger .bar {
@@ -278,6 +280,7 @@ a {
   bottom: -3vmin;
   mix-blend-mode: luminosity;
   order: 4;
+  user-select: none;
   transition: 1s ease-out;
 }
 .header .header-container .header-btm .header-btns {
@@ -286,6 +289,7 @@ a {
   justify-items: center;
   column-gap: 25px;
   order: 3;
+  user-select: none;
 }
 .header .header-container .header-btm .header-cta-btn {
   width: fit-content;
@@ -306,7 +310,7 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #174484;
+  background: linear-gradient(-45deg, #174484 0%, #174484 100%);
   mix-blend-mode: soft-light;
   isolation: isolate;
   z-index: -2;
@@ -358,6 +362,7 @@ a {
   padding: 15px 20px;
   margin-bottom: 60px;
   border-radius: 5px;
+  user-select: none;
   transition: 0.3s ease;
 }
 .develop .develop-container .dv-projects-wrapper {
@@ -378,9 +383,10 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  overflow: hidden;
   aspect-ratio: 0.8;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  user-select: none;
   transition: box-shadow 0.4s ease;
 }
 .develop .develop-container .dv-projects-wrapper .dv-project .project-mockup {
@@ -452,6 +458,7 @@ a {
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.35);
   overflow: hidden;
+  user-select: none;
 }
 .expertise .expertise-container .exp-cards .exp-card .card-title {
   font-size: clamp(3.4rem, 4vw, 4rem);
@@ -500,7 +507,7 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #174484;
+  background: linear-gradient(-45deg, #174484 0%, #174484 100%);
   mix-blend-mode: soft-light;
   isolation: isolate;
   z-index: -1;
@@ -556,6 +563,7 @@ a {
   position: relative;
   display: grid;
   row-gap: 10px;
+  max-width: 100vw;
 }
 .design .design-container .slider-wrapper .slider {
   position: relative;
@@ -564,6 +572,7 @@ a {
   width: 100%;
   height: auto;
   overflow-x: hidden;
+  user-select: none;
 }
 .design .design-container .slider-wrapper .slider .slide {
   display: flex;
@@ -580,32 +589,20 @@ a {
 }
 .design .design-container .slider-wrapper .slider .slide-track {
   display: flex;
-  width: 3200px;
-  animation: scroll 25s linear infinite;
+  width: 800vw;
   column-gap: 10px;
   transition: 1s ease-out;
+  animation: scroll 25s linear infinite;
+}
+.design .design-container .slider-wrapper .slider .slide-track.slider--reverse {
+  animation-direction: reverse;
 }
 @keyframes scroll {
   0% {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(-1604px);
-  }
-}
-.design .design-container .slider-wrapper .slider .slide-track2 {
-  display: flex;
-  width: 3200px;
-  animation: scroll2 20s linear infinite;
-  column-gap: 10px;
-  transition: 1s ease-out;
-}
-@keyframes scroll2 {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-1604px);
+    transform: translateX(-400vw);
   }
 }
 
@@ -652,6 +649,7 @@ a {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
+  user-select: none;
 }
 .footer .footer-container .footer-top .column-box .contact-info {
   position: relative;
@@ -668,6 +666,7 @@ a {
   font-size: 2.5rem;
   font-weight: 700;
   color: #181b1c;
+  user-select: none;
   transition: color 0.4s ease;
 }
 .footer .footer-container .footer-top .column-box .contact-info .con-info-top .con-info-splitter {
@@ -695,6 +694,7 @@ a {
 .footer .footer-container .footer-top .column-box .footer-menu .footer-item {
   position: relative;
   margin-bottom: 15px;
+  user-select: none;
 }
 .footer .footer-container .footer-top .column-box .footer-menu .footer-item:nth-child(3) {
   margin-bottom: 0;
@@ -710,6 +710,7 @@ a {
   font-weight: 700;
   color: #181b1c;
   margin-bottom: 15px;
+  user-select: none;
   transition: color 0.4s ease;
 }
 .footer .footer-container .footer-top .column-box .medias-menu {
@@ -760,7 +761,7 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #174484;
+  background: linear-gradient(-45deg, #174484 0%, #174484 100%);
   mix-blend-mode: soft-light;
   isolation: isolate;
   z-index: -1;
@@ -1037,9 +1038,8 @@ a {
     row-gap: 20px;
   }
   .design .design-container .slider-wrapper .slider {
-    animation: 1s ease-out 0.4s 1 sliderSlideRight forwards;
     right: -100%;
-    /*  IMPORTANT CODE BELOW */
+    animation: 1s ease-out 0.4s 1 sliderSlideRight forwards;
   }
   @keyframes sliderSlideRight {
     0% {
@@ -1050,7 +1050,7 @@ a {
     }
   }
   .design .design-container .slider-wrapper .slider .slide-track {
-    width: 4800px;
+    width: 280vw;
     column-gap: 20px;
   }
   @keyframes scroll {
@@ -1058,31 +1058,13 @@ a {
       transform: translateX(0px);
     }
     100% {
-      transform: translateX(-2412px);
+      transform: translateX(-140vw);
     }
   }
   .design .design-container .slider-wrapper .slider .slide-track .slide {
     box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.25);
   }
   .design .design-container .slider-wrapper .slider .slide-track .slide .slide-item {
-    transition: transform 0.3s ease;
-  }
-  .design .design-container .slider-wrapper .slider .slide-track2 {
-    width: 4800px;
-    column-gap: 20px;
-  }
-  @keyframes scroll2 {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(-2412px);
-    }
-  }
-  .design .design-container .slider-wrapper .slider .slide-track2 .slide {
-    box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.35);
-  }
-  .design .design-container .slider-wrapper .slider .slide-track2 .slide .slide-item {
     transition: transform 0.3s ease;
   }
   .design .design-container .slider-wrapper .slider:nth-child(2) {

@@ -110,6 +110,7 @@ a {
     display: block;
     width: auto;
     height: 45px;
+    user-select: none;
     z-index: 1;
   }
 }
@@ -192,6 +193,7 @@ a {
 .hamburger {
   display: block;
   cursor: pointer;
+  user-select: none;
   z-index: 1;
 
   .bar {
@@ -292,6 +294,7 @@ a {
         bottom: -3vmin;
         mix-blend-mode: luminosity;
         order: 4;
+        user-select: none;
         transition: 1s ease-out;
       }
 
@@ -301,6 +304,7 @@ a {
         justify-items: center;
         column-gap: 25px;
         order: 3;
+        user-select: none;
       }
 
       .header-cta-btn {
@@ -383,6 +387,7 @@ a {
       padding: 15px 20px;
       margin-bottom: $m-small;
       border-radius: 5px;
+      user-select: none;
       transition: 0.3s ease;
     }
 
@@ -404,9 +409,10 @@ a {
         width: 100%;
         height: 100%;
         border-radius: 20px;
-        overflow: hidden;
         aspect-ratio: 0.8;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.35);
+        overflow: hidden;
+        user-select: none;
         transition: box-shadow 0.4s ease;
 
         .project-mockup {
@@ -487,6 +493,7 @@ a {
         border-radius: 10px;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.35);
         overflow: hidden;
+        user-select: none;
 
         .card-title {
           font-size: clamp(3.4rem, 4vw, 4rem);
@@ -607,6 +614,7 @@ a {
       position: relative;
       display: grid;
       row-gap: 10px;
+      max-width: 100vw;
 
       .slider {
         position: relative;
@@ -615,6 +623,7 @@ a {
         width: 100%;
         height: auto;
         overflow-x: hidden;
+        user-select: none;
 
         .slide {
           display: flex;
@@ -633,34 +642,21 @@ a {
 
         .slide-track {
           display: flex;
-          width: calc(400px * 8);
-          animation: scroll 25s linear infinite;
+          width: calc(100vw * 8);
           column-gap: 10px;
           transition: 1s ease-out;
+          animation: scroll 25s linear infinite;
+
+          &.slider--reverse {
+            animation-direction: reverse;
+          }
 
           @keyframes scroll {
             0% {
               transform: translateX(0px);
             }
             100% {
-              transform: translateX(calc(-401px * 4));
-            }
-          }
-        }
-
-        .slide-track2 {
-          display: flex;
-          width: calc(400px * 8);
-          animation: scroll2 20s linear infinite;
-          column-gap: 10px;
-          transition: 1s ease-out;
-
-          @keyframes scroll2 {
-            0% {
-              transform: translateX(0px);
-            }
-            100% {
-              transform: translateX(calc(-401px * 4));
+              transform: translateX(calc(-100vw * 4));
             }
           }
         }
@@ -715,6 +711,7 @@ a {
           width: 100%;
           height: auto;
           margin-bottom: 10px;
+          user-select: none;
         }
 
         .contact-info {
@@ -732,6 +729,7 @@ a {
               font-size: 2.5rem;
               font-weight: map-get($font-weight, fs-bold);
               color: $clr-title;
+              user-select: none;
               transition: color 0.4s ease;
             }
 
@@ -763,6 +761,7 @@ a {
           .footer-item {
             position: relative;
             margin-bottom: 15px;
+            user-select: none;
 
             &:nth-child(3) {
               margin-bottom: 0;
@@ -782,6 +781,7 @@ a {
           font-weight: map-get($font-weight, fs-bold);
           color: $clr-title;
           margin-bottom: 15px;
+          user-select: none;
           transition: color 0.4s ease;
         }
 
@@ -1211,8 +1211,8 @@ a {
         row-gap: 20px;
 
         .slider {
-          animation: 1s ease-out 0.4s 1 sliderSlideRight forwards;
           right: -100%;
+          animation: 1s ease-out 0.4s 1 sliderSlideRight forwards;
 
           @keyframes sliderSlideRight {
             0% {
@@ -1224,7 +1224,7 @@ a {
           }
 
           .slide-track {
-            width: calc(600px * 8);
+            width: calc(35vw * 8);
             column-gap: 20px;
 
             @keyframes scroll {
@@ -1232,36 +1232,12 @@ a {
                 transform: translateX(0px);
               }
               100% {
-                transform: translateX(calc(-603px * 4));
+                transform: translateX(calc(-35vw * 4));
               }
             }
 
             .slide {
               box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.25);
-
-              .slide-item {
-                transition: transform 0.3s ease;
-              }
-            }
-          }
-
-          /*  IMPORTANT CODE BELOW */
-
-          .slide-track2 {
-            width: calc(600px * 8);
-            column-gap: 20px;
-
-            @keyframes scroll2 {
-              0% {
-                transform: translateX(0px);
-              }
-              100% {
-                transform: translateX(calc(-603px * 4));
-              }
-            }
-
-            .slide {
-              box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.35);
 
               .slide-item {
                 transition: transform 0.3s ease;

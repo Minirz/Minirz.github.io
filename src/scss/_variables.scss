@@ -8,7 +8,7 @@ $clr-accent: #02a5e0;
 $clr-title: $clr-dark;
 $clr-text: $clr-light;
 
-$filter: #174484;
+$filter: linear-gradient(-45deg, #174484 0%, #174484 100%);
 
 $background: url(../images/background-white.jpg);
 
@@ -20,7 +20,7 @@ $clr-accent-dark: $clr-accent;
 $clr-title-dark: $clr-light;
 $clr-text-dark: $clr-light;
 
-$filter-dark: #174484;
+$filter-dark: linear-gradient(-45deg, #174484 0%, #174484 100%);
 
 $background-dark: url(../images/background-dark.jpg);
 
