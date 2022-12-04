@@ -123,11 +123,13 @@ body.dark .footer .footer-filter {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
     color: #181b1c;
   }
-  body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode:hover .fa-adjust {
-    color: #02a5e0;
+  body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode .label .fa-adjust {
     -webkit-transform: rotate(180deg) translateY(0%);
     -moz-transform: rotate(180deg) translateY(0%);
     transform: rotate(180deg) translateY(0%);
+  }
+  body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode:hover .fa-adjust {
+    color: #02a5e0;
   }
   body.dark .header .header-container .header-top .ht-bottom {
     -webkit-text-stroke: 3px #dcdeea;

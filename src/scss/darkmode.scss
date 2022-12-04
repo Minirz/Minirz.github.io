@@ -187,12 +187,19 @@ body.dark {
               }
             }
 
+            .darkmode {
+              .label {
+                .fa-adjust {
+                  -webkit-transform: rotate(180deg) translateY(0%);
+                  -moz-transform: rotate(180deg) translateY(0%);
+                  transform: rotate(180deg) translateY(0%);
+                }
+              }
+            }
+
             .darkmode:hover {
               .fa-adjust {
                 color: $clr-accent;
-                -webkit-transform: rotate(180deg) translateY(0%);
-                -moz-transform: rotate(180deg) translateY(0%);
-                transform: rotate(180deg) translateY(0%);
               }
             }
           }

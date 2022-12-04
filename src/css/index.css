@@ -918,12 +918,14 @@ a {
     background-position: 100%;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
   }
-  .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode:hover .fa-adjust {
-    color: #02a5e0;
+  .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode .label .fa-adjust {
     top: 0%;
     -webkit-transform: rotate(0deg) translateY(0%);
     -moz-transform: rotate(0deg) translateY(0%);
     transform: rotate(0deg) translateY(0%);
+  }
+  .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode:hover .fa-adjust {
+    color: #02a5e0;
   }
   .navbar .navbar-container .nav-menu-wrapper .social-menu {
     display: none;
