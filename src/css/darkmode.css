@@ -10,9 +10,6 @@
 /**=========== UTILS VARIABLES ===========**/
 body.dark {
   background: url(../images/background-dark.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 body.dark .navbar .navbar-container .nav-menu-wrapper {
   background: linear-gradient(-45deg, #174484 0%, #174484 100%), url(../images/background-dark.jpg);
@@ -52,8 +49,9 @@ body.dark .header .header-container .header-profile-image {
   mix-blend-mode: normal;
 }
 body.dark .header .header-filter {
-  background: linear-gradient(-45deg, #174484 0%, #174484 100%);
   mix-blend-mode: difference;
+  -webkit-mix-blend-mode: difference;
+  -moz-mix-blend-mode: difference;
 }
 body.dark .develop .develop-container .dv-title {
   color: #dcdeea;
@@ -71,8 +69,9 @@ body.dark .expertise .expertise-container .exp-card .exp-card-border::before {
   background: linear-gradient(45deg, #175edc 0%, #175edc 100%);
 }
 body.dark .expertise .expertise-filter {
-  background: linear-gradient(-45deg, #174484 0%, #174484 100%);
   mix-blend-mode: difference;
+  -webkit-mix-blend-mode: difference;
+  -moz-mix-blend-mode: difference;
 }
 body.dark .design .design-container .design-title {
   color: #dcdeea;
@@ -96,8 +95,9 @@ body.dark .footer .footer-container .copyright-text {
   color: #dcdeea;
 }
 body.dark .footer .footer-filter {
-  background: linear-gradient(-45deg, #174484 0%, #174484 100%);
   mix-blend-mode: difference;
+  -webkit-mix-blend-mode: difference;
+  -moz-mix-blend-mode: difference;
 }
 
 @media (min-width: 1200px) {

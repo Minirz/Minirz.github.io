@@ -2,9 +2,6 @@
 
 body.dark {
   background: $background-dark;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   .navbar {
     .navbar-container {
@@ -65,8 +62,9 @@ body.dark {
     }
 
     .header-filter {
-      background: $filter-dark;
       mix-blend-mode: difference;
+      -webkit-mix-blend-mode: difference;
+      -moz-mix-blend-mode: difference;
     }
   }
 
@@ -99,8 +97,9 @@ body.dark {
       }
     }
     .expertise-filter {
-      background: $filter-dark;
       mix-blend-mode: difference;
+      -webkit-mix-blend-mode: difference;
+      -moz-mix-blend-mode: difference;
     }
   }
 
@@ -150,8 +149,9 @@ body.dark {
     }
 
     .footer-filter {
-      background: $filter-dark;
       mix-blend-mode: difference;
+      -webkit-mix-blend-mode: difference;
+      -moz-mix-blend-mode: difference;
     }
   }
 }

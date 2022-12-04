@@ -332,6 +332,8 @@ a {
     height: 100%;
     background: $filter;
     mix-blend-mode: soft-light;
+    -webkit-mix-blend-mode: soft-light;
+    -moz-mix-blend-mode: soft-light;
     isolation: isolate;
     z-index: -2;
   }
@@ -553,6 +555,8 @@ a {
     height: 100%;
     background: $filter;
     mix-blend-mode: soft-light;
+    -webkit-mix-blend-mode: soft-light;
+    -moz-mix-blend-mode: soft-light;
     isolation: isolate;
     z-index: -1;
   }
@@ -845,6 +849,8 @@ a {
     height: 100%;
     background: $filter;
     mix-blend-mode: soft-light;
+    -webkit-mix-blend-mode: soft-light;
+    -moz-mix-blend-mode: soft-light;
     isolation: isolate;
     z-index: -1;
   }
@@ -1495,8 +1501,6 @@ a {
 
 @media (min-width: 590px) {
   .header {
-    height: 100vh;
-
     .header-container {
       align-content: space-evenly;
 
