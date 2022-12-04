@@ -158,30 +158,44 @@ a {
       border-radius: 5px;
     }
 
-    .checkbox {
-      position: absolute;
-      opacity: 0;
-    }
-
-    .label {
+    .darkmode {
       position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      place-content: center;
+      place-items: center;
       width: 30px;
       height: 30px;
-      padding: 10px;
-      background-color: transparent;
-      box-shadow: inset 0 0 10px -2px rgba(0, 0, 0, 0.8);
-      border-radius: 50px;
-      cursor: pointer;
 
-      .fa-adjust {
-        color: $clr-dark;
-        transform: rotate(0deg) scale(1.6);
-        -webkit-transform: rotate(0deg) scale(1.6);
-        -moz-transform: rotate(0deg) scale(1.6);
-        transition: transform 0.5s linear, color 0.2s ease;
+      .checkbox {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+      }
+
+      .label {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        background-color: transparent;
+        box-shadow: inset 0 0 10px -2px rgba(0, 0, 0, 0.8);
+        border-radius: 50px;
+        cursor: pointer;
+
+        .fa-adjust {
+          position: relative;
+          color: $clr-dark;
+          font-size: 1.6rem;
+          top: 30%;
+          -webkit-transform: rotate(0deg) translateY(-20%);
+          -moz-transform: rotate(0deg) translateY(-20%);
+          transform: rotate(0deg) translateY(-20%);
+          transition: transform 0.5s linear, color 0.2s ease;
+        }
       }
     }
   }

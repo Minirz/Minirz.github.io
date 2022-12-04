@@ -155,11 +155,21 @@ a {
   padding: 10px 20px;
   border-radius: 5px;
 }
-.nav-menu-wrapper .nav-item .checkbox {
+.nav-menu-wrapper .nav-item .darkmode {
+  position: relative;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+}
+.nav-menu-wrapper .nav-item .darkmode .checkbox {
   position: absolute;
+  width: 30px;
+  height: 30px;
   opacity: 0;
 }
-.nav-menu-wrapper .nav-item .label {
+.nav-menu-wrapper .nav-item .darkmode .label {
   position: relative;
   display: flex;
   justify-content: center;
@@ -172,11 +182,14 @@ a {
   border-radius: 50px;
   cursor: pointer;
 }
-.nav-menu-wrapper .nav-item .label .fa-adjust {
+.nav-menu-wrapper .nav-item .darkmode .label .fa-adjust {
+  position: relative;
   color: #181b1c;
-  transform: rotate(0deg) scale(1.6);
-  -webkit-transform: rotate(0deg) scale(1.6);
-  -moz-transform: rotate(0deg) scale(1.6);
+  font-size: 1.6rem;
+  top: 30%;
+  -webkit-transform: rotate(0deg) translateY(-20%);
+  -moz-transform: rotate(0deg) translateY(-20%);
+  transform: rotate(0deg) translateY(-20%);
   transition: transform 0.5s linear, color 0.2s ease;
 }
 
