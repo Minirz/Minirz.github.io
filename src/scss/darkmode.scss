@@ -22,9 +22,9 @@ body.dark {
 
             .fa-adjust {
               color: $clr-light;
-              -webkit-transform: rotate(180deg) translateY(20%);
-              -moz-transform: rotate(180deg) translateY(20%);
-              transform: rotate(180deg) translateY(20%);
+              -webkit-transform: rotate(180deg);
+              -moz-transform: rotate(180deg);
+              transform: rotate(180deg);
             }
           }
         }
@@ -184,16 +184,6 @@ body.dark {
                 background-position: 100%;
                 box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
                 color: $clr-dark;
-              }
-            }
-
-            .darkmode {
-              .label {
-                .fa-adjust {
-                  -webkit-transform: rotate(180deg) translateY(0%);
-                  -moz-transform: rotate(180deg) translateY(0%);
-                  transform: rotate(180deg) translateY(0%);
-                }
               }
             }
 

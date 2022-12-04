@@ -155,21 +155,11 @@ a {
   padding: 10px 20px;
   border-radius: 5px;
 }
-.nav-menu-wrapper .nav-item .darkmode {
-  position: relative;
-  display: grid;
-  place-content: center;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-}
-.nav-menu-wrapper .nav-item .darkmode .checkbox {
+.nav-menu-wrapper .nav-item .checkbox {
   position: absolute;
-  width: 30px;
-  height: 30px;
   opacity: 0;
 }
-.nav-menu-wrapper .nav-item .darkmode .label {
+.nav-menu-wrapper .nav-item .label {
   position: relative;
   display: flex;
   justify-content: center;
@@ -182,14 +172,13 @@ a {
   border-radius: 50px;
   cursor: pointer;
 }
-.nav-menu-wrapper .nav-item .darkmode .label .fa-adjust {
+.nav-menu-wrapper .nav-item .label .fa-adjust {
   position: relative;
   color: #181b1c;
   font-size: 1.6rem;
-  top: 30%;
-  -webkit-transform: rotate(0deg) translateY(-20%);
-  -moz-transform: rotate(0deg) translateY(-20%);
-  transform: rotate(0deg) translateY(-20%);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
   transition: transform 0.5s linear, color 0.2s ease;
 }
 
@@ -917,12 +906,6 @@ a {
   .navbar .navbar-container .nav-menu-wrapper .nav-item .nav-cta-btn:hover {
     background-position: 100%;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
-  }
-  .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode .label .fa-adjust {
-    top: 0%;
-    -webkit-transform: rotate(0deg) translateY(0%);
-    -moz-transform: rotate(0deg) translateY(0%);
-    transform: rotate(0deg) translateY(0%);
   }
   .navbar .navbar-container .nav-menu-wrapper .nav-item .darkmode:hover .fa-adjust {
     color: #02a5e0;
