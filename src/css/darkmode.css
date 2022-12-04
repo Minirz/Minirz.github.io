@@ -28,6 +28,7 @@ body.dark .navbar .navbar-container .nav-menu-wrapper .nav-item .label .fa-adjus
   color: #dcdeea;
   transform: rotate(180deg) scale(1.6);
   -webkit-transform: rotate(180deg) scale(1.6);
+  -moz-transform: rotate(180deg) scale(1.6);
 }
 body.dark .navbar .navbar-container .hamburger .bar {
   background-color: #dcdeea;
