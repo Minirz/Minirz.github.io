@@ -190,10 +190,9 @@ a {
           position: relative;
           color: $clr-dark;
           font-size: 1.6rem;
-          top: 30%;
-          -webkit-transform: rotate(0deg) translateY(-20%);
-          -moz-transform: rotate(0deg) translateY(-20%);
-          transform: rotate(0deg) translateY(-20%);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          transform: rotate(0deg);
           transition: transform 0.5s linear, color 0.2s ease;
         }
       }
@@ -1046,17 +1045,6 @@ a {
             &:hover {
               background-position: 100%;
               box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
-            }
-          }
-
-          .darkmode {
-            .label {
-              .fa-adjust {
-                top: 0%;
-                -webkit-transform: rotate(0deg) translateY(0%);
-                -moz-transform: rotate(0deg) translateY(0%);
-                transform: rotate(0deg) translateY(0%);
-              }
             }
           }
 
