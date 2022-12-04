@@ -10,6 +10,9 @@
 /**=========== UTILS VARIABLES ===========**/
 body.dark {
   background: url(../images/background-dark.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body.dark .navbar .navbar-container .nav-menu-wrapper {
   background: linear-gradient(-45deg, #174484 0%, #174484 100%), url(../images/background-dark.jpg);
@@ -101,9 +104,6 @@ body.dark .footer .footer-filter {
 }
 
 @media (min-width: 1200px) {
-  body.dark {
-    background-attachment: fixed;
-  }
   body.dark #topBtn:hover {
     background-color: #dcdeea;
     color: #181b1c;

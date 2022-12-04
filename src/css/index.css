@@ -142,7 +142,7 @@ a {
 .nav-menu-wrapper .nav-item.theme-toggle {
   display: grid;
   justify-content: center;
-  margin-block: 6rem 0;
+  margin-block: 4rem 0;
 }
 .nav-menu-wrapper .nav-item .nav-link {
   font-size: 4rem;
@@ -827,9 +827,6 @@ a {
   }
 }
 @media (min-width: 1200px) {
-  body {
-    background-attachment: fixed;
-  }
   #topBtn:hover {
     background-color: #181b1c;
   }
@@ -1140,9 +1137,6 @@ a {
   }
   .design .design-container .slider-wrapper .slider .slide-track .slide .slide-item {
     transition: transform 0.3s ease;
-  }
-  .footer {
-    /* Animated background */
   }
   .footer .footer-container {
     overflow-y: hidden;
