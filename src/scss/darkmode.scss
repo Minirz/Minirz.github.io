@@ -24,6 +24,7 @@ body.dark {
               color: $clr-light;
               transform: rotate(180deg) scale(1.6);
               -webkit-transform: rotate(180deg) scale(1.6);
+              -moz-transform: rotate(180deg) scale(1.6);
             }
           }
         }

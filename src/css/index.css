@@ -176,6 +176,7 @@ a {
   color: #181b1c;
   transform: rotate(0deg) scale(1.6);
   -webkit-transform: rotate(0deg) scale(1.6);
+  -moz-transform: rotate(0deg) scale(1.6);
   transition: transform 0.5s linear, color 0.2s ease;
 }
 
