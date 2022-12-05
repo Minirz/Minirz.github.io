@@ -1096,6 +1096,7 @@ a {
     row-gap: 20px;
   }
   .design .design-container .slider-wrapper .slider {
+    overflow: visible;
     right: -100%;
     animation: 0.6s ease-out 0.4s 1 sliderSlideRight forwards;
   }
