@@ -6,6 +6,27 @@ body.dark {
   background-repeat: no-repeat;
   background-size: cover;
 
+  #consent-popup {
+    background-color: $clr-light;
+    transition: all 0.4s ease;
+    z-index: 9999;
+
+    .concent-text {
+      font-size: 1.6rem;
+      font-weight: map-get($font-weight, fs-regular);
+      color: $clr-dark;
+
+      #accept {
+        font-weight: map-get($font-weight, fs-semibold);
+        color: $clr-accent;
+      }
+    }
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+
   .navbar {
     .navbar-container {
       .nav-menu-wrapper {

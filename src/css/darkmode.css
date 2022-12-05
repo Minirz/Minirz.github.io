@@ -14,6 +14,23 @@ body.dark {
   background-repeat: no-repeat;
   background-size: cover;
 }
+body.dark #consent-popup {
+  background-color: #dcdeea;
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+body.dark #consent-popup .concent-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #181b1c;
+}
+body.dark #consent-popup .concent-text #accept {
+  font-weight: 600;
+  color: #02a5e0;
+}
+body.dark #consent-popup.hidden {
+  opacity: 0;
+}
 body.dark .navbar .navbar-container .nav-menu-wrapper {
   background: linear-gradient(-45deg, #174484 0%, #174484 100%), url(../images/background-dark.jpg);
   background-blend-mode: difference;

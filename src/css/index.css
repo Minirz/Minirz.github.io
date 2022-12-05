@@ -1,4 +1,4 @@
-/**========== LIGHTMODE VARIABLES ==========**/
+@import "../node_modules/normalize.css/normalize.css"; /**========== LIGHTMODE VARIABLES ==========**/
 /**========== DARKMODE VARIABLES ===========**/
 /**======= WIDTH & HEIGHT VARIABLES =======**/
 /**============ FONT VARIABLES ============**/
@@ -64,6 +64,29 @@ a {
   opacity: 0;
   z-index: 99;
   transition: all 0.4s ease;
+}
+
+#consent-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 8rem;
+  background-color: #181b1c;
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+#consent-popup .concent-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #dcdeea;
+}
+#consent-popup .concent-text #accept {
+  font-weight: 600;
+  color: #02a5e0;
+}
+#consent-popup.hidden {
+  opacity: 0;
 }
 
 /**========== NAVBAR STYLING START ===========**/
@@ -832,6 +855,72 @@ a {
 @media (min-width: 1200px) {
   #topBtn:hover {
     background-color: #181b1c;
+  }
+  .cookie-wrapper {
+    position: fixed;
+    text-align: center;
+    max-width: 365px;
+    bottom: 30px;
+    left: 30px;
+    padding: 25px 25px 30px 25px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 14px -4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  .cookie-wrapper ::selection {
+    color: #fff;
+    background: #fcba7f;
+  }
+  .cookie-wrapper .cookie-img {
+    max-width: 90px;
+  }
+  .cookie-wrapper .cookie-content {
+    margin-top: 10px;
+  }
+  .cookie-wrapper .cookie-content .cookie-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #181b1c;
+  }
+  .cookie-wrapper .cookie-content .cookie-text {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #181b1c;
+    margin: 5px 0 20px 0;
+  }
+  .cookie-wrapper .cookie-content .cookie-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cookie-wrapper .cookie-content .cookie-btns .cookie-btn {
+    margin: 0 10px;
+  }
+  .cookie-wrapper .cookie-content .cookie-btns .cookie-btn.accept {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    background: #fcba7f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .cookie-wrapper .cookie-content .cookie-btns .cookie-btn.accept:hover {
+    transform: scale(1.02);
+    background-color: #181b1c;
+  }
+  .cookie-wrapper .cookie-content .cookie-btns .cookie-btn.learn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fcba7f;
+  }
+  .cookie-wrapper .cookie-content .cookie-btns .cookie-btn.learn:hover {
+    transform: scale(1.02);
+    color: #181b1c;
   }
   .navbar .navbar-container .nav-logo {
     position: relative;
