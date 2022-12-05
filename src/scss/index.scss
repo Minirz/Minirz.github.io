@@ -64,6 +64,7 @@ a {
 
 #consent-popup {
   position: fixed;
+  display: block;
   bottom: 0;
   left: 0;
   right: 0;
@@ -84,7 +85,7 @@ a {
   }
 
   &.hidden {
-    opacity: 0;
+    display: none;
   }
 }
 
